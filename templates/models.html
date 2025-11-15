@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Models</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Brain</span> Tumor Detection</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li class="current"><a href="/models">Models</a></li>
+                    <li><a href="/detect">Detect</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="models-info">
+        <div class="container">
+            <h1>Our Machine Learning Models</h1>
+            
+            <div class="model-card">
+                <h2>Convolutional Neural Network (CNN)</h2>
+                <p>Our CNN model is specifically designed for image classification tasks. It consists of multiple convolutional layers followed by max-pooling layers, and finally dense layers for classification.</p>
+                <div class="model-stats">
+                    <span>Accuracy: 94.2%</span>
+                    <span>Precision: 93.8%</span>
+                    <span>Recall: 94.1%</span>
+                </div>
+            </div>
+            
+            <div class="model-card">
+                <h2>K-Nearest Neighbors (KNN)</h2>
+                <p>The KNN model classifies images based on the similarity to other images in the feature space. We use k=5 neighbors with Euclidean distance metric.</p>
+                <div class="model-stats">
+                    <span>Accuracy: 88.5%</span>
+                    <span>Precision: 87.9%</span>
+                    <span>Recall: 88.3%</span>
+                </div>
+            </div>
+            
+            <div class="model-card">
+                <h2>Support Vector Machine (SVM)</h2>
+                <p>Our SVM model uses a radial basis function (RBF) kernel to classify the images in a high-dimensional feature space.</p>
+                <div class="model-stats">
+                    <span>Accuracy: 90.1%</span>
+                    <span>Precision: 89.7%</span>
+                    <span>Recall: 90.0%</span>
+                </div>
+            </div>
+            
+            <div class="model-card">
+                <h2>Random Forest</h2>
+                <p>The Random Forest model uses an ensemble of decision trees to improve classification performance and reduce overfitting.</p>
+                <div class="model-stats">
+                    <span>Accuracy: 91.3%</span>
+                    <span>Precision: 91.0%</span>
+                    <span>Recall: 91.2%</span>
+                </div>
+            </div>
+            
+            <div class="model-card highlight">
+                <h2>Ensemble Model</h2>
+                <p>Our ensemble model combines predictions from all the above models using majority voting to achieve the highest possible accuracy.</p>
+                <div class="model-stats">
+                    <span>Accuracy: 95.7%</span>
+                    <span>Precision: 95.5%</span>
+                    <span>Recall: 95.6%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Brain Tumor Detection System &copy; 2023</p>
+    </footer>
+</body>
+</html>
